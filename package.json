@@ -2,7 +2,7 @@
   "name": "reactWiki",
   "version": "1.0.0",
   "description": "reactとexpressを用いたWikiアプリケーションのリポジトリ",
-  "main": "index.js",
+  "main": "wiki-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
