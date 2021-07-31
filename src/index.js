@@ -19,16 +19,11 @@ import WikiShow from './wiki_show';
 const WikiApp = () => (
   <Router>
     <div>
-      // WikiShowコンポーネントの挿入
       <Route path='/wiki/:name' component={WikiShow} />
-      // WikiEditコンポーネントの挿入
       <Route path='/edit/:name' component={WikiEdit} />
     </div>
   </Router>
 )
 
 // DOMにメインコンポーネントを書き込む
-ReactDOM.render(
-  <WikiApp />,
-  document.getElementById('root')
-);
+ReactDOM.render(<WikiApp />, document.getElementById('root'));

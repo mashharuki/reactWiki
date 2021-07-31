@@ -3,7 +3,7 @@
  */
 
 // 必要なモジュールを読み込む
-import React from 'react';
+import React, {Component} from 'react';
 import request from 'superagent';
 import WikiParser from './wiki_parser';
 import styles from './styles';
@@ -11,7 +11,7 @@ import styles from './styles';
 /**
  * 画面表示コンポーネント
  */
-export default class WikiEdit extends Component {
+export default class WikiShow extends Component {
     // コンストラクター関数
     constructor (props) {
         super(props);
@@ -65,6 +65,3 @@ export default class WikiEdit extends Component {
         return lines;
     }
 }
-
-// コンポーネントを外部に公開する。
-export default WikiShow;

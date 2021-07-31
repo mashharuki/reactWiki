@@ -26,7 +26,7 @@ app.listen(portNo, () => {
 
 /**
  * Wikiデータを返すAPI
- * /
+ */
 app.get('/api/get/:wikiname', (req, res) => {
   // wikiの名称を取得する。
   const wikiname = req.params.wikiname
@@ -51,7 +51,7 @@ app.get('/api/get/:wikiname', (req, res) => {
 
 /**
  * Wikiデータを書き込むAPIの定義
- * /
+ */
 app.post('/api/put/:wikiname', (req, res) => {
 　　// wikiの名称を取得する。
   const wikiname = req.params.wikiname
