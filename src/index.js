@@ -19,8 +19,10 @@ import WikiShow from './wiki_show';
 const WikiApp = () => (
   <Router>
     <div>
-      <Route path='/wiki/:name' component={WikiShow} />
-      <Route path='/edit/:name' component={WikiEdit} />
+      <Switch>
+        <Route path='/wiki/:name' component={WikiShow} />
+        <Route path='/edit/:name' component={WikiEdit} />
+      </Switch>
     </div>
   </Router>
 )
